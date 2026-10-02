@@ -1,0 +1,13 @@
+# The dsh-tool-notion bundle patch: one insert adding the Notion block converter.
+#
+# Works on the data Notion exchanges — block JSON and Notion-flavoured
+# Markdown — so no API token is needed and nothing is sent anywhere.
+#
+#   - id: tool-notion
+#     config:
+#       workDir: C:/Users/you/notes
+#       outputDir: C:/Users/you/notes/notion-output
+
+- insert:
+    - id: tool-notion
+      name: dsh-tool-notion

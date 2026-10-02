@@ -1,0 +1,55 @@
+{
+  "name": "dsh-tool-notion",
+  "version": "1.0.0",
+  "description": "Notion block conversion for DeepSeek Harness: turn an exported block array into Notion-flavoured Markdown and back, with rich-text runs split at annotation boundaries and every lossy step reported. No API client and no external dependency.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/**/*.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "notion",
+    "markdown",
+    "blocks",
+    "rich-text",
+    "converter",
+    "export",
+    "mcp",
+    "notes",
+    "笔记转换"
+  ],
+  "author": "yuehancn",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuehancn/dsh-tool-notion.git"
+  },
+  "homepage": "https://github.com/yuehancn/dsh-tool-notion#readme",
+  "bugs": {
+    "url": "https://github.com/yuehancn/dsh-tool-notion/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc.2"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.4",
+    "@deepseek-ai/dsh-tools": ">=0.2.0-rc.2"
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "~3.18.4"
+  }
+}
